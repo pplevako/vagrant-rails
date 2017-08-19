@@ -1,0 +1,7 @@
+---
+
+- name: install config
+  template: src=tmux.conf.j2 dest=~{{ item }}/.tmux.conf
+  with_items: "{{ tmux_users }}"
+  become: yes
+  become_user: "{{ item }}"

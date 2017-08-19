@@ -1,0 +1,48 @@
+---
+
+- name: "Install dependencies"
+  hosts: all
+  gather_facts: true
+
+  vars:
+    rbenv:
+      env: user
+      version: v1.1.1
+      default_ruby: 2.4.1
+      rubies:
+        - version: 2.4.1
+    nodejs_version: "8.x"
+    postgresql_version: 9.5
+
+  roles:
+    - role: zzet.rbenv
+      rbenv_users:
+        - vagrant
+
+    - role: Oefenweb.yarn
+      become: true
+
+    - role: geerlingguy.nodejs
+      become: true
+
+    # - role: locale
+    #   become: true
+
+    - role: ANXS.postgresql
+      become: true
+
+    - role: geerlingguy.redis
+      become: true
+
+    - role: geerlingguy.nginx
+      become: true
+
+    - role: tmux
+      tmux_users:
+        - vagrant
+
+    - role : unison
+      become: true
+
+    - role: htop
+      become: true
