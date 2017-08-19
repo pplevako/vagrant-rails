@@ -13,6 +13,7 @@
         - version: 2.4.1
     nodejs_version: "8.x"
     postgresql_version: 9.5
+    postgresql_ext_install_dev_headers: true
 
   roles:
     - role: zzet.rbenv
