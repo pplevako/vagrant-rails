@@ -47,3 +47,6 @@
 
     - role: htop
       become: true
+
+    - role: mc
+      become: true
