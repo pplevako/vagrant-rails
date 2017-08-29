@@ -50,3 +50,6 @@
 
     - role: mc
       become: true
+
+    - role: qt
+      become: true
