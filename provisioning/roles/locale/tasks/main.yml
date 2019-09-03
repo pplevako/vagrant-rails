@@ -1,4 +1,0 @@
----
-
-- name: update LANG
-  command: /usr/sbin/update-locale LANG={{ locale.lang }}

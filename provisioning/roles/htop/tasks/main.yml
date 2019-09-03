@@ -1,6 +1,0 @@
----
-
-- name: install
-  apt:
-    name: htop
-    state: present

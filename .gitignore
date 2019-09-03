@@ -1,9 +1,4 @@
 .vagrant
 playbook.retry
 
-provisioning/roles/zzet.rbenv
-provisioning/roles/Oefenweb.yarn
-provisioning/roles/geerlingguy.nodejs
-provisioning/roles/ANXS.postgresql
-provisioning/roles/geerlingguy.redis
-provisioning/roles/geerlingguy.nginx
+provisioning/roles/*.*
