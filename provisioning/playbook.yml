@@ -52,6 +52,9 @@
     vars:
       ansible_become: yes
 
+  - include_role:
+      name: tmuxp
+
   - name: Install htop
     apt: name=htop state=present
     become: yes
