@@ -1,1 +1,1 @@
-start "" "C:\Program Files\Git\git-bash.exe" -c "vagrant halt"
+START /D .. "" "%ProgramFiles%\Git\git-bash.exe" -c "vagrant halt"

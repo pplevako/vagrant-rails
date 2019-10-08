@@ -1,1 +1,1 @@
-cd .. && start "" "C:\Program Files\Git\git-bash.exe"
+START /D .. "" "%ProgramFiles%\Git\git-bash.exe"

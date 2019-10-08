@@ -1,1 +1,1 @@
-start "" "C:\Program Files\Git\git-bash.exe" -c "vagrant up && vagrant ssh"
+START /D .. "" "%ProgramFiles%\Git\git-bash.exe" -c "vagrant up && vagrant ssh"
