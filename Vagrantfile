@@ -10,5 +10,5 @@ Vagrant.configure("2") do |config|
   end
 end
 
-local_vagrantfile = "Vagrantfile.local"
+local_vagrantfile = File.join(__dir__, "Vagrantfile.local")
 load local_vagrantfile if File.exist?(local_vagrantfile)
