@@ -13,4 +13,4 @@
     python3 -m pipx ensurepath
 
 - name: Install tmuxp
-  command: pipx install tmuxp
+  command: python3 -m pipx install tmuxp
