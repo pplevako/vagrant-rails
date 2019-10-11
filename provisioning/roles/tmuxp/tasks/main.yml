@@ -8,9 +8,7 @@
   become: yes
 
 - name: Install pipx
-  shell: |
-    python3 -m pip install --user pipx
-    python3 -m pipx ensurepath
+  command: python3 -m pip install --user pipx
 
 - name: Install tmuxp
   command: python3 -m pipx install tmuxp
